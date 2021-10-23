@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page tang</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="home">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo_tang.png" alt="logo marca">
+            </div><!-- logo -->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sabor">Sabor</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <nav class="menu-mobile">
+                <ion-icon name="menu"></ion-icon>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sabor">Sabor</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div><!-- container -->
+    </header>
+
+
+    <section class="slider">
+        
+        <div class="container">
+            <img style="opacity:1;" src="img/img_path_1579787329.png" alt="imagem Slider">
+            <img src="img/14251301_froneri_site_banners_tang_1920x720px.jpg" alt="imagem Slider">
+            <img src="img/5fe0ae98b5800a788ffbf658_ver nova.jpg" alt="imagem Slider">
+        </div>
+        <div class="bullets">
+            <div class="bullets-single active-bullets"></div>
+            <div class="bullets-single"></div>
+            <div class="bullets-single"></div>
+        </div>
+
+    </section>
+
+
+    <section id="sabor" class="sabor">
+        <div class="container">
+
+            <div class="box-single">
+                <span><img src="img/logo_tang.png" alt="logo marca">
+                <p>Seu Sabor Favorito!</p>
+            </span>
+
+                <div class="box-jarra">
+                    <img src="img/jarra-laranja.png" alt="jarra suco">
+                    <h3>laranja</h3>
+                </div><!-- sabor -->
+
+                <div class="box-suco">
+                    <img id="uva" onclick="colorBG('#7f3383');saborJarra('img/jarra-uva.png')" src="img/saquinho-uva.png" alt="saquinho suco">
+
+                    <img id="abacaxi" onclick="colorBG('#bfa333');saborJarra('img/jarra-abacaxi.png')" src="img/saquinho-abacaxi.png" alt="saquinho suco">
+
+                    <img id="goiaba" onclick="colorBG('#fe756f');saborJarra('img/jarra-goiaba.png')" src="img/saquinho-goiaba.png" alt="saquinho suco">
+
+                    <img id="maracuja" onclick="colorBG('#e5b717');saborJarra('img/jarra-maracuja.png')" src="img/saquinho-maracuja.png" alt="saquinho suco">
+
+                    <img id="morango" onclick="colorBG('#f23834');saborJarra('img/jarra-morango.png')" src="img/saquinho-morango.png" alt="saquinho suco">
+
+                    <img id="limao" onclick="colorBG('#149727');saborJarra('img/jarra-limao.png')" src="img/saquinho-limao.png" alt="saquinho suco">
+
+                    <img id="tangerina" onclick="colorBG('#f97009');saborJarra('img/jarra-tangerina.png')" src="img/saquinho-tangerina.png" alt="saquinho suco">
+
+                    <img id="laranja" onclick="colorBG('#f89f1b');saborJarra('img/jarra-laranja.png')" src="img/saquinho-laranja.png" alt="saquinho suco">
+                </div><!-- box-suco -->
+
+            </div><!-- box-single -->
+
+        </div><!-- container -->
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+
+            <h2>Sobre</h2>
+            <p>
+                Desenvolvido pelo químico William Mitchell, foi registrado em 1957 e lançado no mercado norte-americano em 1959 pela General Foods. O refresco só começou a ser rentável para a empresa, quando a NASA utilizou o produto no Projeto Gemini, em meados da década de 1960, e disparou em vendas quando foi usado no Projeto Apollo, sendo levado a Lua, em 1969.
+
+                Em 2012, a Kraft Foods criou a Mondelēz International, uma divisão para o negócio de guloseimas, que incluem o refresco, porém, foi em 1988 que a marca passou a ter ligação com a Kraft, já que em 1985, a General Foods foi comprada pela Philip Morris Companies e em 1988 a Philip comprou a Kraft. Em 1989 as divisões se uniram, formando a Kraft General Foods
+            </p>
+        </div><!-- container -->
+    </section><!-- sobre -->
+
+    <div class="container">
+
+        <iframe id="videoYT" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/GTSqxzJi_wQ?wmode=transparent&amp;showinfo=0&amp;rel=0&amp;showsearch=0&amp;controls=1&amp;autohide=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.tang.com.br&amp;widgetid=1"></iframe>
+
+    </div><!-- container -->
+    
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Contato</h2>
+
+            <div class="popap">
+                <span class="close">X</span>
+                <h3>Mensagem Enviada Com Sucesso!</h3>
+            </div><!-- popap -->
+
+            <form>
+                <div class="nome">
+                    <input required="name" id="nome" type="text" placeholder="Nome">
+                    <input required="name" id="sobrenome" type="text" placeholder="Sobrenome">
+                </div><!-- nome -->
+                <input required="email" type="email" placeholder="E-mail">
+                <textarea required cols="30" rows="10" placeholder="Mensagem"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+
+        </div><!-- container -->
+    </section><!-- contact -->
+
+    <footer>
+        <p>&copy; Todos os Direitos Reservados a Guilherme Alexander - 2021</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
