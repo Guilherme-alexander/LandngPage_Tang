@@ -35,17 +35,24 @@
 // =========================================================>
 // SESSÃO SABOR FUNÇÃO COR E IMAGE
 
-    var itens = document.querySelectorAll('.box-suco img');
-    var jarra = document.querySelector('.box-jarra img');
+    let svg = document.querySelectorAll("[fill]")
+    let itens = document.querySelectorAll('.box-suco img');
+    let jarra = document.querySelector('.box-jarra img');
     let variavelCor = document.querySelector(':root');
 
     function colorBG(cor){
         variavelCor.style.setProperty("--cor1", cor);
+
+        svgCor = cor
+        for(let i = 0; i < svg.length; i++){ 
+            svg[i].attributes.fill.value = svgCor;
+        }
     }
-    
+
     function saborJarra(imgJara){
         jarra.src = imgJara
     }
+
 
     for(let i = 0; i < itens.length; i++){
         itens[i].addEventListener('click',function(e){
